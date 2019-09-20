@@ -13,7 +13,7 @@ To operate with a resource, the client has to provide the server with the means 
 
 Following REST constrains makes discovering and using your API's much easier for any developer.
  ----
-As mentioned above, any RESTful web service should give a client the access to server’s resources through a common approach, such as HTTP requests. The basic set of requests that allow the client to get, upload, update and remove data consists of GET, POST, PATCH and DELETE respectively. To get a better understanding of how they work, let’s use an example.
+As mentioned above, any RESTful web service should give a client the access to server’s resources through a common approach, such as HTTP requests. To get a better understanding of how they work, let’s use an example.
 Imagine you have a RESTful web service that manages a database of students. You want to use the students' data for your other app. To do that, your app would have to communicate with web service's API in a form of HTTP requests.
 To take a better look at how it works let's start with the **GET** request.
 
