@@ -89,7 +89,7 @@ For example, we can list all the present students with an another GET request:
 Now we can see all the data the students have and the means to change it. 
 To change the existing resource instead of adding a new one the **PUT** method is used. In our example, we can change the existing student's data. Let's say our Kate has changed her faculty to FEL. Let's update the data:
 
-    PUT /student/1 HTTP/1.1
+    PUT /students/1 HTTP/1.1
     Accept: application/json
     Content-Type: application/json
     
@@ -134,7 +134,7 @@ To change the existing resource instead of adding a new one the **PUT** method i
    What if we want to make a new student? To do so our app would use the **POST** method. The POST method creates a new resource instead of updating the old one. For example, let's add a new student:
    
 
-    POST /student HTTP1.1
+    POST /students HTTP1.1
     Accept: application/json
     Content-Type: application/json
     {
@@ -144,13 +144,13 @@ To change the existing resource instead of adding a new one the **PUT** method i
    The response would contain a new resource with the same fields except "id", that is used as an unique identifier and is automatically updated. To access the new student's entry, we would use the following GET method:
    
 
-    GET /student/2 HTTP/1.1
+    GET /students/2 HTTP/1.1
     Accept: application/json
 
   Finally, to remove resources the **DELETE** method is used. For example, let's remove our new student from the database:
   
 
-    DELETE /student/2 HTTP/1.1
+    DELETE /students/2 HTTP/1.1
     Accept: application/json
 The response would contain a response status code that would indicate whether the resource has been deleted.
 
